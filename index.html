@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <style>
+    .codinglist{max-width: 1400px;margin: 0 auto;padding: 50px 20px 100px;box-sizing: border-box;}
+    .codinglist .title {display: inline-block;margin: 20px 0;padding: 18px 26px;border: 1px solid #888;background: #fff;font-size: 20px;text-align: left;font-weight: 600;}
+    .codinglist .title strong {display: block;margin-top: 10px;font-size: 16px;color: #000;font-weight: 400;}
+    .codinglist .title small {display: block;margin-top: 10px;font-size: 14px;color: #666;font-weight: 400;}
+    .codinglist table{width: 100%;margin-top: 20px;border-collapse: collapse;background-color: #fff;box-shadow: 0px 15px 20px 2px rgba(0, 0, 0, 0.1);color: #555;}
+    .codinglist table thead th {padding: 15px 20px;background-color:#F5A419;font-size: 16px;color:#fff;text-align: center;font-weight: 400;}
+    .codinglist table tbody th {padding: 10px 20px;background-color:#fff;border: 1px solid #ddd;font-size: 16px;font-weight: 400;vertical-align: middle;}
+    .codinglist table td {padding: 10px 20px;background-color:#fff;border: 1px solid #ddd;font-size: 16px;font-weight: 400;vertical-align: middle;line-height: 1.5;}
+    .codinglist table td a{border-bottom: 1px solid #333;color: #333;}
+    .codinglist table td a:hover{border-color: #FF881B;color: #FF881B;}
+    .codinglist table tr.bgc th, .codinglist table tr.bgc td{background-color: #fffbf4;}
+    .codinglist table tr.del th, .codinglist table tr.del td{text-decoration: line-through;}
+    .codinglist .memo{font-size: 14px;}
+    </style>
+
+</head>
+<body>
+
+    <div class="codinglist">
+        <p class="title">
+            <img src="assets/images/logo.svg" alt=""><br>
+            <strong class="mb20">PPAKSSAM 퍼블리싱 파일 리스트</strong>
+            <small>
+                version2 페이지 bg적용<br>
+                version2 이미지는 (assets>images>ver2) 따로 분리<br>
+                update file - layout.css / main.css / contents.css / ui.js / main.js
+            </small>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">depth1</th>
+                    <th scope="col">depth2</th>
+                    <th scope="col">depth3</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bgc">
+                    <th class="depth">메인</th>
+                    <td class="info">메인페이지</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="main.html" target="_blank">main.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr class="bgc">
+                    <th class="depth" rowspan="3">공통</th>
+                    <td class="info" rowspan="3">레이아웃</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="layout_case01.html" target="_blank">layout_case01.html</a></td>
+                    <td class="memo">로그인 전</td>
+                </tr>
+                <tr class="bgc">
+                    <td class="info"></td>
+                    <td class="file"><a href="layout_case02.html" target="_blank">layout_case02.html</a></td>
+                    <td class="memo">로그인 후</td>
+                </tr>
+                <tr class="bgc">
+                    <td class="info"></td>
+                    <td class="file"><a href="layout_case03.html" target="_blank">layout_case03.html</a></td>
+                    <td class="memo">로그인 후 - 복습/테스트 & 플레이리스트 뷰페이지인 경우 플레이리스트 변경</td>
+                </tr>
+                <tr class="bgc">
+                    <th class="depth" rowspan="3">ver2</th>
+                    <td class="info">나의강의실</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/나의강의실_ver2.html" target="_blank">나의강의실_ver2.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr class="bgc">
+                    <td class="info">복습/테스트</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/복습테스트_ver2.html" target="_blank">복습테스트_ver2.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr class="bgc">
+                    <td class="info">플레이리스트</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/플레이리스트_ver2.html" target="_blank">플레이리스트_ver2.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="3">게시판</th>
+                    <td class="info">목록</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/공지사항_목록.html" target="_blank">공지사항_목록.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">목록없음</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/목록없음.html" target="_blank">목록없음.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">상세</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/공지사항_상세.html" target="_blank">공지사항_상세.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="3">빡쌤 소개</th>
+                    <td class="info">빡쌤 프로필</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/빡쌤프로필.html" target="_blank">빡쌤프로필.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">빡쌤 인스타그램</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/빡쌤인스타그램.html" target="_blank">빡쌤인스타그램.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">빡쌤 유튜브</td>
+                    <td class="info"></td>
+                    <td class="file"></td>
+                    <td class="memo">2차 작업예정 (6월 ~ 8월 사이에 진행)</td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="2">오늘의 영어</th>
+                    <td class="info">목록</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/오늘의영어_목록.html" target="_blank">오늘의영어_목록.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">상세</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/오늘의영어_상세.html" target="_blank">오늘의영어_상세.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <th class="depth">수강생 후기</th>
+                    <td class="info">수강생 후기</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/수강생후기.html" target="_blank">수강생후기.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="5">고객센터</th>
+                    <td class="info">고객센터</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/고객센터.html" target="_blank">고객센터.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info" rowspan="2">공지사항</td>
+                    <td class="info">목록</td>
+                    <td class="file"><a href="page/공지사항_목록.html" target="_blank">공지사항_목록.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">상세</td>
+                    <td class="file"><a href="page/공지사항_상세.html" target="_blank">공지사항_상세.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">FAQ</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/FAQ.html" target="_blank">FAQ.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">1:1 문의</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/1대1문의.html" target="_blank">1대1문의.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="7">로그인</th>
+                    <td class="info">로그인</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/로그인.html" target="_blank">로그인.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info" rowspan="2">회원가입</td>
+                    <td class="info">step1</td>
+                    <td class="file"><a href="page/회원가입_step1.html" target="_blank">회원가입_step1.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">step2</td>
+                    <td class="file"><a href="page/회원가입_step2.html" target="_blank">회원가입_step2.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">아이디찾기</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/아이디찾기.html" target="_blank">아이디찾기.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">비밀번호찾기</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/비밀번호찾기.html" target="_blank">비밀번호찾기.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">비밀번호재설정</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/비밀번호재설정.html" target="_blank">비밀번호재설정.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">마이페이지</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/마이페이지.html" target="_blank">마이페이지.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr class="del">
+                    <th class="depth" rowspan="3">나의강의실</th>
+                    <td class="info" rowspan="2">복습/테스트</td>
+                    <td class="info">목록</td>
+                    <td class="file"><a href="page/복습테스트_목록.html" target="_blank">복습테스트_목록.html</a></td>
+                    <td class="memo"><span style="color: #f00;">수정페이지</span></td>
+                </tr>
+                <tr class="del">
+                    <td class="info">상세</td>
+                    <td class="file"><a href="page/복습테스트_상세.html" target="_blank">복습테스트_상세.html</a></td>
+                    <td class="memo"><span style="color: #f00;">수정페이지</span></td>
+                </tr>
+                <tr class="del">
+                    <td class="info">플레이리스트</td>
+                    <td class="info"></td>
+                    <td class="file"><a href="page/플레이리스트.html" target="_blank">플레이리스트.html</a></td>
+                    <td class="memo"><span style="color: #f00;">수정페이지</span> 수강스케줄 > 플레이리스트 변경</td>
+                </tr>
+                <tr>
+                    <th class="depth" rowspan="5">기타</th>
+                    <td class="info">개인정보처리방침</td>
+                    <td class="info"></td>
+                    <td class="file"></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">이용약관</td>
+                    <td class="info"></td>
+                    <td class="file"></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">법인정보</td>
+                    <td class="info"></td>
+                    <td class="file"></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info" rowspan="2">에러페이지</td>
+                    <td class="info">404</td>
+                    <td class="file"><a href="page/404.html" target="_blank">404.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+                <tr>
+                    <td class="info">403</td>
+                    <td class="file"><a href="page/403.html" target="_blank">403.html</a></td>
+                    <td class="memo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    
+    <script src="assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/lib/slick.min.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">본문바로가기</a>
+        <a href="#nav">메뉴바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <div class="topNotice">
+                    <h5><img src="assets/images/ver2/icon_notice.svg" alt=""><p>공지사항</p></h5>
+                    <div class="noticeSlider">
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerMenu">
+                    <h1 class="logo"><a href="/" title="메인페이지로"><img src="assets/images/ver2/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
+                
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">수강문의</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </nav><!-- nav end -->
+                     
+                    <div class="gnbWrap">
+                        <div class="snsGroup">
+                            <a href="#"><img src="assets/images/ver2/icon_naverblog.svg" alt="네이버블로그"></a>
+                            <a href="#"><img src="assets/images/ver2/icon_youtube.svg" alt="유튜브"></a>
+                            <a href="#"><img src="assets/images/ver2/icon_instagram.svg" alt="인스타그램"></a>
+                        </div><!-- snsGroup end -->
+                        <a href="#gnb" id="btnGnbOpen"><span>메뉴열기</span></a>
+                        <div id="gnb">
+                            <div class="gnbInner">
+                                <div class="userInfo">
+                                    <div class="userEmoji"><img src="assets/images/img_emoji00.png" alt=""></div>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <!-- 로그인 전 -->
+                                    <p>안녕하세요. 반갑습니다.<br />로그인 후 빡쌤과 함께하세요!</p>
+                                    <button type="button" class="btnLogin">로그인</button>
+                                </div>
+                                <ul>
+                                    <li><a href="#">빡쌤소개</a>
+                                        <ul>
+                                            <li><a href="#">빡쌤 프로필</a></li>
+                                            <li><a href="#">빡쌤 인스타그램</a></li>
+                                            <li><a href="#">빡쌤 유튜브</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">프로그램소개</a></li>
+                                    <li><a href="#">오늘의 영어</a></li>
+                                    <li><a href="#">수강생 후기</a></li>
+                                </ul>
+                                <!-- 
+                                    <div class="gnbBottom">
+                                        <a href="#">나의 강의실</a>
+                                        <a href="#">고객센터</a>
+                                        <a href="#">기업수강문의</a>
+                                    </div> 
+                                -->
+                                <button type="button" id="btnGnbclose">메뉴닫기</button>
+                            </div><!-- gnbInner end -->
+                        </div><!-- gnb end -->
+                    </div><!-- gnbWrap end -->
+                </div><!-- headerMenu end -->
+            </div><!-- inner end -->
+
+            <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+            <div class="fixedLoginUI">
+                <button type="button">회원가입</button>
+                <button type="button">나의 강의실</button>
+                <button type="button" class="btnLoginUIClose"><img src="assets/images/ver2/icon_fixedLoginUI_close.svg" alt=""></button>
+            </div>
+
+            <div class="fixedLeftMenu">
+                <div class="userInfo">
+                    <div class="userEmoji"><img src="assets/images/img_emoji00.png" alt=""></div>
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <!-- 로그인 전 -->
+                    <p>안녕하세요. 반갑습니다.<br />로그인 후 빡쌤과 함께하세요!</p>
+                    <button type="button" class="btnLogin">로그인</button>
+                </div>
+                <ul class="LeftMenu">
+                    <li><a href="#">빡쌤소개</a></li>
+                    <li><a href="#">프로그램소개</a></li>
+                    <li><a href="#">오늘의 영어</a></li>
+                    <li><a href="#">수강생 후기</a></li>
+                </ul>
+            </div><!-- fixedLeftMenu end -->
+    
+            <!-- [전달사항] 복습/테스트 & 플레이리스트 뷰페이지 구조 다름 -->
+            <div class="fixedPlayList">
+                <a href="#" class="btnPlayLink"><img src="assets/images/ver2/arrow_playlist.png" alt=""></a>
+                <em class="bar"><span style="width: 33.5%;"></span></em>
+                <div class="playList">
+                    <div class="title">Sample Pattern - 1</div>
+                    <div class="text">I wanna ask you to go busan to see your friend</div>
+                    <div class="controlGroup">
+                        <button type="button" class="prev"><img src="assets/images/ver2/icon_prev.png" alt=""></button>
+                        <button type="button" class="play"><img src="assets/images/ver2/icon_play.png" alt=""></button>
+                        <button type="button" class="next"><img src="assets/images/ver2/icon_next.png" alt=""></button>
+                        <button type="button" class="repetition" disabled><img src="assets/images/ver2/icon_repetition.png" alt=""></button>
+                        <input type="range" id="volumeControl" value="0">
+                    </div>
+                </div>
+            </div><!-- fixedPlayList end -->
+
+        </header>
+
+        <div class="container">
+            <!-- [전달사항] #contents 구분 .main/.sub -->
+            <div id="contents" class="main">
+                <!-- <div class="visual">
+                    <div class="visualSlide">
+                        <div class="visualItem">
+                            <div class="inner">
+                                <div class="text">
+                                    <div class="visualArrow">
+                                        <button type="button" class="prev">Prev</button>
+                                        <span class="line"></span>
+                                        <button type="button" class="next">Next</button>
+                                    </div>
+                                    <p class="sm">Regular studying allows you to better formulate your own thoughts.</p>
+                                    <p class="lg"><span>Mr. PPAK SSAM</span> will always help you make up your mind and find a something for fun activities.</p>
+                                </div>
+                                <div class="img"><img src="assets/images/img_visualSlide01.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="visualItem">
+                            <div class="inner">
+                                <div class="text">
+                                    <div class="visualArrow">
+                                        <button type="button" class="prev">Prev</button>
+                                        <span class="line"></span>
+                                        <button type="button" class="next">Next</button>
+                                    </div>
+                                    <p class="sm">Regular studying allows you to better formulate your own thoughts.</p>
+                                    <p class="lg"><span>Mr. PPAK SSAM</span> will always help you make up your mind and find a something for fun activities.</p>
+                                </div>
+                                <div class="img"><img src="assets/images/img_visualSlide02.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visualDots"></div>
+                    <div class="socialGroup">
+                        <div class="socialGroupInner">
+                            <a href="#"><span>빡쌤을 소개합니다</span></a>
+                            <a href="#"><span>빡쌤의 인스타그램</span></a>
+                            <a href="#"><span>빡쌤의 유튜브</span></a>
+                        </div>
+                    </div>
+                </div> --><!-- visual end -->
+
+                <div class="visual">
+                    <div class="inner">
+                        <div class="visualSlide">
+                            <div class="visualItem">
+                                <a href="#">
+                                    <img src="assets/images/ver2/img_visualSlider01_pc.png" alt="" class="pc">
+                                    <img src="assets/images/ver2/img_visualSlider01_tablet.png" alt="" class="tablet">
+                                    <img src="assets/images/ver2/img_visualSlider01_m.png" alt="" class="m">
+                                </a>
+                            </div>
+                            <div class="visualItem">
+                                <a href="#">
+                                    <img src="assets/images/ver2/img_visualSlider02_pc.png" alt="" class="pc">
+                                    <img src="assets/images/ver2/img_visualSlider02_tablet.png" alt="" class="tablet">
+                                    <img src="assets/images/ver2/img_visualSlider02_m.png" alt="" class="m">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="visualArrow">
+                            <button type="button" class="prev">Prev</button>
+                            <button type="button" class="next">Next</button>
+                        </div>
+                        <div class="visualDots"></div>
+                    </div>
+                </div><!-- visual end -->
+
+                <div class="todayEnglish">
+                    <div class="inner">
+                        <h3 class="mainTitle">Today English</h3>
+                        <div class="todayEngSlideWrap">
+                            <strong class="mainText">
+                                최고의 고객만족을 실현하기 위해 <br />
+                                끊임없이 노력하는 빡쌤의 이야기를 담고 있습니다.
+                            </strong>
+                            <div class="todayEngArrow">
+                                <button type="button" class="prev">Prev</button>
+                                <span class="line"></span>
+                                <button type="button" class="next">Next</button>
+                            </div>
+                            <div class="todayEngSlide">
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.17</p>
+                                        <p class="num">#46</p>
+                                        <p class="title">I`m dying to swim!</p>
+                                        <p class="text">나는 죽어가는 중이다?..<br />수영을 하면서?.. 이렇게 해석?!</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.12</p>
+                                        <p class="num">#45</p>
+                                        <p class="title">일이 너무 많아 ! 너무 바빠 !</p>
+                                        <p class="text">busy 사용하지 않고, 표현하기!</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.10</p>
+                                        <p class="num">#44</p>
+                                        <p class="title">I am up for it!</p>
+                                        <p class="text">나는 그것을 위해 위쪽에 있어?<br />설마... 이렇게 해석했다고?</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.02</p>
+                                        <p class="num">#43</p>
+                                        <p class="title">Don`t push my button!</p>
+                                        <p class="text">Buttons? 내 버튼? 내단추?<br />가 생각났다?.. 널 어쩌면 좋니?</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.17</p>
+                                        <p class="num">#46</p>
+                                        <p class="title">I`m dying to swim!</p>
+                                        <p class="text">나는 죽어가는 중이다?..<br />수영을 하면서?.. 이렇게 해석?!</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.12</p>
+                                        <p class="num">#45</p>
+                                        <p class="title">일이 너무 많아 ! 너무 바빠 !</p>
+                                        <p class="text">busy 사용하지 않고, 표현하기!</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.10</p>
+                                        <p class="num">#44</p>
+                                        <p class="title">I am up for it!</p>
+                                        <p class="text">나는 그것을 위해 위쪽에 있어?<br />설마... 이렇게 해석했다고?</p>
+                                    </a>
+                                </div>
+                                <div class="todayEngItem">
+                                    <a href="#">
+                                        <p class="date">2023.03.02</p>
+                                        <p class="num">#43</p>
+                                        <p class="title">Don`t push my button!</p>
+                                        <p class="text">Buttons? 내 버튼? 내단추?<br />가 생각났다?.. 널 어쩌면 좋니?</p>
+                                    </a>
+                                </div>
+                            </div><!-- todayEngSlide end -->
+                        </div><!-- todayEngSlideWrap end -->
+                        <div class="bannerSlide">
+                            <div class="bannerItem green">
+                                <p>영어교육의 시작점이 되는 빡쌤에듀는 <br class="mobileShow" />개인별 수준 맞춤형 수업을 진행합니다.</p>
+                                <strong><span>올바른 길라잡이</span> 빡쌤과 <br class="mobileShow" />시작을 함께하세요.</strong>
+                                <button type="button">상담신청 바로가기</button>
+                                <div class="img"><img src="assets/images/img_bannerSlide01.png" alt=""></div>
+                            </div>
+                            <div class="bannerItem purple">
+                                <p>어떻게 발굴하고 가공하여 <br class="mobileShow" />성장하는가에 따라 가치가 부여됩니다.</p>
+                                <strong>빡쌤과 함께하면 <span>숨어있는 <br class="mobileShow" />가능성</span>을 발견합니다.</strong>
+                                <button type="button">상담신청 바로가기</button>
+                                <div class="img"><img src="assets/images/img_bannerSlide02.png" alt=""></div>
+                            </div>
+                        </div><!-- bannerSlide end -->
+                    </div><!-- inner end -->
+                </div><!-- todayEnglish end -->
+                <div class="studentReviews">
+                    <div class="inner">
+                        <h3 class="mainTitle">Student Reviews.</h3>
+                        <strong class="mainText">
+                            폭넓은 통찰력과 맞춤형 교육으로 <br/>
+                            주요 고객의 기대를 뛰어넘는 감동을 실현하고 있습니다.
+                        </strong>
+                        <div class="reviewArrow">
+                            <button type="button" class="prev">Prev</button>
+                            <span class="line"></span>
+                            <button type="button" class="next">Next</button>
+                        </div>
+                        <!-- 
+                            [전달사항] 
+                            # 이모지 이미지 
+                            img_emoji00 ~ img_emoji20 총 21가지 png 존재
+                            
+                            # score 이미지 
+                            10가지 별갯수 이미지 존재
+                            score100 = 5점 / score90 = 4.5점 / score80 = 4점 / score70 = 3.5점 / score60 = 3점 / score50 = 2.5점 / score40 = 2점 / score30 = 1.5점 / score20 = 1점 / score10 = 0.5점
+                        -->
+                        <div class="reviewSlide">
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji03.png" alt=""></p>
+                                    <p class="score score90">4.5점</p>
+                                    <p class="info">한*지 / 23세 / 미용사</p>
+                                    <p class="title">외국인 손님이랑 스타일 상담까지!</p>
+                                    <p class="text">일하는 곳이 이태원이라 외국인 손님이 자주 오시는 편이라 외국어에 대한 만역한 걱정이 많았는데, 이제는 스몰토킹부터 상담까지 가능해졌어요!</p>
+                                    <p class="date">2023.03.17</p>
+                                </a>
+                            </div>
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji00.png" alt=""></p>
+                                    <p class="score score100">5점</p>
+                                    <p class="info">박*혁 / 31세 / 사무직</p>
+                                    <p class="title">안휘 원래 영어가 이렇게 잼났나유?</p>
+                                    <p class="text">영어가 점점 재밌어 지는게 느껴져서 너무 좋습니다! 앞으로도 계속 다니게 될 것 같아요. 첫 수업만 들어봐도 느낌이 바로와요.</p>
+                                    <p class="date">2023.03.21</p>
+                                </a>
+                            </div>
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji15.png" alt=""></p>
+                                    <p class="score score90">4.5점</p>
+                                    <p class="info">강*훈 / 43세 / 영업</p>
+                                    <p class="title">비즈니스 회화로 자신감 뿜뿜!</p>
+                                    <p class="text">암기만 하면서 실력이 전혀 늘지 않았는데, 빡쌤교육 이후로 비즈니스 미팅 진행해도 전혀 망설임없이 자신감있게 진행하고 있습니다.</p>
+                                    <p class="date">2023.02.11</p>
+                                </a>
+                            </div>
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji03.png" alt=""></p>
+                                    <p class="score score90">4.5점</p>
+                                    <p class="info">한*지 / 23세 / 미용사</p>
+                                    <p class="title">외국인 손님이랑 스타일 상담까지!</p>
+                                    <p class="text">일하는 곳이 이태원이라 외국인 손님이 자주 오시는 편이라 외국어에 대한 만역한 걱정이 많았는데, 이제는 스몰토킹부터 상담까지 가능해졌어요!</p>
+                                    <p class="date">2023.03.17</p>
+                                </a>
+                            </div>
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji00.png" alt=""></p>
+                                    <p class="score score100">5점</p>
+                                    <p class="info">박*혁 / 31세 / 사무직</p>
+                                    <p class="title">안휘 원래 영어가 이렇게 잼났나유?</p>
+                                    <p class="text">영어가 점점 재밌어 지는게 느껴져서 너무 좋습니다! 앞으로도 계속 다니게 될 것 같아요. 첫 수업만 들어봐도 느낌이 바로와요.</p>
+                                    <p class="date">2023.03.21</p>
+                                </a>
+                            </div>
+                            <div class="reviewItem">
+                                <a href="#">
+                                    <p class="emoji"><img src="assets/images/img_emoji15.png" alt=""></p>
+                                    <p class="score score90">4.5점</p>
+                                    <p class="info">강*훈 / 43세 / 영업</p>
+                                    <p class="title">비즈니스 회화로 자신감 뿜뿜!</p>
+                                    <p class="text">암기만 하면서 실력이 전혀 늘지 않았는데, 빡쌤교육 이후로 비즈니스 미팅 진행해도 전혀 망설임없이 자신감있게 진행하고 있습니다.</p>
+                                    <p class="date">2023.02.11</p>
+                                </a>
+                            </div>
+                        </div><!-- reviewSlide end -->
+                    </div><!-- inner end -->
+                </div><!-- studentReviews end -->
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <ul class="footerMenu">
+                <li><a href="#" class="fb"><span>개인정보처리방침</span></a></li>
+                <li><a href="#"><span>이용약관</span></a></li>
+                <li><a href="#"><span>법인정보</span></a></li>
+            </ul>
+            <p class="footerAddr">13556 경기도 성남시 분당구 정자일로 213번길 5 분당아이파크 302동 2, 3층</p>
+            <p class="footerCopy">COPYRIGHT © <span>PPAK SSAM.</span> ALL RIGHT RESERVED</p>
+        </footer>
+
+    </div><!-- wrap end -->
+
+</body>
+</html>

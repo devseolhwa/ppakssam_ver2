@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+    
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">본문바로가기</a>
+        <a href="#nav">메뉴바로가기</a>
+    </div>
+
+    <!-- [전달사항] 복습/테스트 & 플레이리스트 뷰페이지에서 .wrap에 .PlayViewPage 추가 -->
+    <div class="wrap PlayViewPage">
+        <header>
+            <div class="inner">
+                <div class="topNotice">
+                    <h5><img src="../assets/images/ver2/icon_notice.svg" alt=""><p>공지사항</p></h5>
+                    <div class="noticeSlider">
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerMenu">
+                    <h1 class="logo"><a href="/" title="메인페이지로"><img src="../assets/images/ver2/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
+                
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#">로그아웃</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">수강문의</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </nav><!-- nav end -->
+                     
+                    <div class="gnbWrap">
+                        <div class="snsGroup">
+                            <a href="#"><img src="../assets/images/ver2/icon_naverblog.svg" alt="네이버블로그"></a>
+                            <a href="#"><img src="../assets/images/ver2/icon_youtube.svg" alt="유튜브"></a>
+                            <a href="#"><img src="../assets/images/ver2/icon_instagram.svg" alt="인스타그램"></a>
+                        </div><!-- snsGroup end -->
+                        <a href="#gnb" id="btnGnbOpen"><span>메뉴열기</span></a>
+                        <div id="gnb">
+                            <div class="gnbInner">
+                                <div class="userInfo">
+                                    <div class="userEmoji"><img src="../assets/images/img_emoji02.png" alt=""></div>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <!-- 로그인 후 -->
+                                    <p>안녕하세요. <span>박서우</span>님<br />오늘도 빡쌤과 함께하세요!</p> 
+                                    <button type="button" class="btnLogout">로그아웃</button>
+                                    <button type="button" class="btnMypage">마이페이지</button>
+                                </div>
+                                <ul>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <li><a href="#">복습/테스트 03개</a></li>
+                                    <li><a href="#">플레이리스트 01개</a></li>
+                                    <li><a href="#">수업스케줄</a></li>
+                                    <li><a href="#">빡쌤소개</a>
+                                        <ul>
+                                            <li><a href="#">빡쌤 프로필</a></li>
+                                            <li><a href="#">빡쌤 인스타그램</a></li>
+                                            <li><a href="#">빡쌤 유튜브</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">프로그램소개</a></li>
+                                    <li><a href="#">오늘의 영어</a></li>
+                                    <li><a href="#">수강생 후기</a></li>
+                                </ul>
+                                <!-- 
+                                    <div class="gnbBottom">
+                                        <a href="#">나의 강의실</a>
+                                        <a href="#">고객센터</a>
+                                        <a href="#">기업수강문의</a>
+                                    </div> 
+                                -->
+                                <button type="button" id="btnGnbclose">메뉴닫기</button>
+                            </div><!-- gnbInner end -->
+                        </div><!-- gnb end -->
+                    </div><!-- gnbWrap end -->
+                </div><!-- headerMenu end -->
+            </div><!-- inner end -->
+
+            <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+            <div class="fixedLoginUI">
+                <p>안녕하세요. <span>박서우</span>님</p>
+                <em>+ 321일</em>
+            </div>
+
+            <div class="fixedLeftMenu">
+                <div class="userInfo">
+                    <div class="userEmoji"><img src="../assets/images/img_emoji02.png" alt=""></div>
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <!-- 로그인 후 -->
+                    <p>안녕하세요. <span>박서우</span>님<br />오늘도 빡쌤과 함께하세요!</p> 
+                    <ul>
+                        <li><a href="#">복습/테스트 <span class="update">03</span>개</a></li><!-- [전달사항] 업데이트시엔 별도 색상을 부여 .update -->
+                        <li><a href="#">플레이리스트 <span>01</span>개</a></li>
+                        <li><a href="#">수업 스케줄</a></li>
+                    </ul>
+                    <button type="button" class="btnMypage">마이페이지</button>
+                </div>
+                <ul class="LeftMenu">
+                    <li><a href="#">빡쌤소개</a></li>
+                    <li><a href="#">프로그램소개</a></li>
+                    <li><a href="#">오늘의 영어</a></li>
+                    <li><a href="#">수강생 후기</a></li>
+                </ul>
+            </div><!-- fixedLeftMenu end -->
+    
+            <!-- [전달사항] 복습/테스트 & 플레이리스트 뷰페이지 구조 다름 -->
+            <div class="fixedPlayList">
+                <em class="bar"><span style="width: 33.5%;"></span></em>
+                <div class="playList">
+                    <div class="controlGroup">
+                        <button type="button" class="prev"><img src="../assets/images/ver2/icon_prev.png" alt=""></button>
+                        <button type="button" class="play"><img src="../assets/images/ver2/icon_play.png" alt=""></button>
+                        <button type="button" class="next"><img src="../assets/images/ver2/icon_next.png" alt=""></button>
+                        <button type="button" class="repetition" disabled><img src="../assets/images/ver2/icon_repetition.png" alt=""></button>
+                    </div>
+                    <input type="range" id="volumeControl" value="0">
+                </div>
+            </div><!-- fixedPlayList end -->
+
+        </header>
+
+        <div class="container">
+            <!-- [전달사항] #contents 구분 .main/.sub -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    <div class="subTitle">
+                        <h4>나의 강의실</h4>
+                        <p>빡쌤과 함께라면 숨어있는 가능성을 발견합니다.</p>
+                        <ul class="menuType02">
+                            <li class="on"><a href="#">복습/테스트</a></li>
+                            <li><a href="#">플레이리스트</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="learningList">
+                        <div class="learningItem">
+                            <div class="learningTextBox">
+                                <a href="#">
+                                    <p class="title">
+                                        <span>Stop + ing vs Stop + to 차이 바로 알기</span>
+                                        <span class="new">New</span>
+                                    </p>
+                                    <p class="date">2023.02.11</p>
+                                </a>
+                            </div>
+                            <div class="ReadingNumBox">
+                                <strong>01회</strong>
+                                <p>열람 횟수</p>
+                            </div>
+                        </div>
+                        <div class="learningItem">
+                            <div class="learningTextBox">
+                                <a href="#">
+                                    <p class="title">
+                                        <span>Stop + ing vs Stop + to 차이</span>
+                                        <span class="new">New</span>
+                                    </p>
+                                    <p class="date">2023.02.11</p>
+                                </a>
+                            </div>
+                            <div class="ReadingNumBox">
+                                <strong>01회</strong>
+                                <p>열람 횟수</p>
+                            </div>
+                        </div>
+                        <div class="learningItem">
+                            <div class="learningTextBox">
+                                <a href="#">
+                                    <p class="title">
+                                        <span>Stop + ing vs Stop + to 차이 바로 알기 p + to 차이 바로 알기</span>
+                                    </p>
+                                    <p class="date">2023.02.11</p>
+                                </a>
+                            </div>
+                            <div class="ReadingNumBox">
+                                <strong>03회</strong>
+                                <p>열람 횟수</p>
+                            </div> 
+                        </div>
+                    </div><!-- learningList end -->
+                    <button type="button" class="btnAllView">전체보기</button>
+
+                    <div class="classViewPage">
+                        <div class="classViewTitle">
+                            <span>복습/테스트</span>
+                            <h4 class="title">Stop + ing vs Stop + to 차이 바로 알기</h4>
+                            <p class="date">23.02.25</p>
+                        </div>
+
+                        <div class="playControllers">
+                            <select id="set_playbackrate" title="재생 속도 선택" class="btnRadius">
+                                <option value="0.7">재생 속도 0.7</option>
+                                <option value="0.8">재생 속도 0.8</option>
+                                <option value="0.9">재생 속도 0.9</option>
+                                <option value="1" selected="">재생 속도 보통</option>
+                                <option value="1.1">재생 속도 1.1</option>
+                                <option value="1.2">재생 속도 1.2</option>
+                                <option value="1.3">재생 속도 1.3</option>
+                            </select>
+                            <select id="set_interval" title="무음시간 선택" class="btnRadius">
+                                <option value="1000">무음 시간 1초</option>
+                                <option value="2000">무음 시간 2초</option>
+                                <option value="3000">무음 시간 3초</option>
+                            </select>
+                        </div>
+
+                        <div class="listeningArea">
+                            <div class="tablecenter">
+                                <div class="table"> <!-- .langTypeOne -->
+                                    <div class="theader">
+                                        <div class="tr">
+                                            <div class="td title order1">영어</div>
+                                            <div class="td tdmargin"></div>
+                                            <div class="td title order3">한국어</div>
+                                        </div>
+                                    </div>
+                                    <div class="tbody">
+                                        <div class="tr on" data-track-number="1">
+                                            <div class="td order1"><span class="mTitle">영어</span><p>Make your content and apps multilingual with fast, dynamic machine translation.</p></div>
+                                            <div class="td tdmargin"></div>
+                                            <div class="td order3"><span class="mTitle">한국어</span><p>빠르고 동적인 기계 번역으로 콘텐츠와 앱을 다국어로 만드세요.</p></div>
+                                        </div>
+                                        <div class="tr" data-track-number="2">
+                                            <div class="td order1"><span class="mTitle">영어</span><p>Make your content and apps multilingual with fast, dynamic machine translation.</p></div>
+                                            <div class="td tdmargin"></div>
+                                            <div class="td order3"><span class="mTitle">한국어</span><p>빠르고 동적인 기계 번역으로 콘텐츠와 앱을 다국어로 만드세요.</p></div>
+                                        </div>
+                                        <div class="tr" data-track-number="3">
+                                            <div class="td order1"><span class="mTitle">영어</span><p>Make your content and apps multilingual with fast, dynamic machine translation.</p></div>
+                                            <div class="td tdmargin"></div>
+                                            <div class="td order3"><span class="mTitle">한국어</span><p>빠르고 동적인 기계 번역으로 콘텐츠와 앱을 다국어로 만드세요.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="tfooter">
+                                        <div class="tr">
+                                            <div class="td order1"></div>
+                                            <div class="td tdmargin"></div>
+                                            <div class="td order3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- listeningArea end -->
+
+                        <div class="playControllers">
+                            <button type="button" class="btn btnBoardList btnBgWhite btn-translate-hide btnRadius">답안 숨김</button>
+                            <button type="button" class="btn btnBoardList btnBgWhite btn-test-mode btnRadius">테스트 모드</button>
+                            <button type="button" class="btn btnBoardList btnBgWhite btnRadius" onclick="popupOpen('#scriptPopup');">스크림트 보기</button>
+                        </div>
+                        <ul class="boardViewNav">
+                            <li>
+                                <p class="prev">이전글</p>
+                                <a href="#" title="이전글 보기">이전글 제목이 노출됩니다.</a>
+                            </li>
+                            <li>
+                                <p class="next">다음글</p>
+                                <a href="#" title="다음글 보기">다음글 제목이 노출됩니다.</a>
+                                <!-- [전달사항] 다음글 없을때 -->
+                                <!-- <p class="none">다음글이 없습니다.</p> -->
+                            </li>
+                        </ul>
+                    </div><!-- classViewPage end -->
+
+                </div>
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <ul class="footerMenu">
+                <li><a href="#" class="fb"><span>개인정보처리방침</span></a></li>
+                <li><a href="#"><span>이용약관</span></a></li>
+                <li><a href="#"><span>법인정보</span></a></li>
+            </ul>
+            <p class="footerAddr">13556 경기도 성남시 분당구 정자일로 213번길 5 분당아이파크 302동 2, 3층</p>
+            <p class="footerCopy">COPYRIGHT © <span>PPAK SSAM.</span> ALL RIGHT RESERVED</p>
+        </footer>
+
+    </div><!-- wrap end -->
+
+    <div class="popupWrap xl" id="scriptPopup">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <div class="scriptList">
+                    <ul>
+                        <li>
+                            <p class="en">I`m gonna.</p>
+                            <p class="ko">나는 ....할 예정입니다.</p>
+                        </li>
+                        <li>
+                            <p class="en">Are you gonna?</p>
+                            <p class="ko">당신은 할 건가요?</p>
+                        </li>
+                        <li>
+                            <p class="en">I`m gonna go to busan to meet friends.</p>
+                            <p class="ko">저는 친구들을 만나러 부산에 갈 것입니다.</p>
+                        </li>
+                        <li>
+                            <p class="en">I`m gonna.</p>
+                            <p class="ko">나는 ....할 예정입니다.</p>
+                        </li>
+                        <li>
+                            <p class="en">Are you gonna?</p>
+                            <p class="ko">당신은 할 건가요?</p>
+                        </li>
+                        <li>
+                            <p class="en">I`m gonna go to busan to meet friends.</p>
+                            <p class="ko">저는 친구들을 만나러 부산에 갈 것입니다.</p>
+                        </li>
+                        <li>
+                            <p class="en">I`m gonna.</p>
+                            <p class="ko">나는 ....할 예정입니다.</p>
+                        </li>
+                        <li>
+                            <p class="en">Are you gonna?</p>
+                            <p class="ko">당신은 할 건가요?</p>
+                        </li>
+                        <li>
+                            <p class="en">I`m gonna go to busan to meet friends.</p>
+                            <p class="ko">저는 친구들을 만나러 부산에 갈 것입니다.</p>
+                        </li>
+                    </ul>
+                </div><!-- scriptList end -->
+                <button type="button" class="btnPopupClose" onclick="popupClose('#scriptPopup');">취소</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+
+</body>
+</html>

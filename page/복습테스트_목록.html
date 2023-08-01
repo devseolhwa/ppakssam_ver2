@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+ 
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">본문바로가기</a>
+        <a href="#nav">메뉴바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <div class="topNotice">
+                    <h5><img src="../assets/images/ver2/icon_notice.svg" alt=""><p>공지사항</p></h5>
+                    <div class="noticeSlider">
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerMenu">
+                    <h1 class="logo"><a href="/" title="메인페이지로"><img src="../assets/images/ver2/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
+                
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#">로그아웃</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">수강문의</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </nav><!-- nav end -->
+                     
+                    <div class="gnbWrap">
+                        <div class="snsGroup">
+                            <a href="#"><img src="../assets/images/ver2/icon_naverblog.svg" alt="네이버블로그"></a>
+                            <a href="#"><img src="../assets/images/ver2/icon_youtube.svg" alt="유튜브"></a>
+                            <a href="#"><img src="../assets/images/ver2/icon_instagram.svg" alt="인스타그램"></a>
+                        </div><!-- snsGroup end -->
+                        <a href="#gnb" id="btnGnbOpen"><span>메뉴열기</span></a>
+                        <div id="gnb">
+                            <div class="gnbInner">
+                                <div class="userInfo">
+                                    <div class="userEmoji"><img src="../assets/images/img_emoji02.png" alt=""></div>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <!-- 로그인 후 -->
+                                    <p>안녕하세요. <span>박서우</span>님<br />오늘도 빡쌤과 함께하세요!</p> 
+                                    <button type="button" class="btnLogout">로그아웃</button>
+                                    <button type="button" class="btnMypage">마이페이지</button>
+                                </div>
+                                <ul>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <li><a href="#">복습/테스트 03개</a></li>
+                                    <li><a href="#">플레이리스트 01개</a></li>
+                                    <li><a href="#">수업스케줄</a></li>
+                                    <li><a href="#">빡쌤소개</a>
+                                        <ul>
+                                            <li><a href="#">빡쌤 프로필</a></li>
+                                            <li><a href="#">빡쌤 인스타그램</a></li>
+                                            <li><a href="#">빡쌤 유튜브</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">프로그램소개</a></li>
+                                    <li><a href="#">오늘의 영어</a></li>
+                                    <li><a href="#">수강생 후기</a></li>
+                                </ul>
+                                <!-- 
+                                    <div class="gnbBottom">
+                                        <a href="#">나의 강의실</a>
+                                        <a href="#">고객센터</a>
+                                        <a href="#">기업수강문의</a>
+                                    </div> 
+                                -->
+                                <button type="button" id="btnGnbclose">메뉴닫기</button>
+                            </div><!-- gnbInner end -->
+                        </div><!-- gnb end -->
+                    </div><!-- gnbWrap end -->
+                </div><!-- headerMenu end -->
+            </div><!-- inner end -->
+
+            <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+            <div class="fixedLoginUI">
+                <p>안녕하세요. <span>박서우</span>님</p>
+                <em>+ 321일</em>
+            </div>
+
+            <div class="fixedLeftMenu">
+                <div class="userInfo">
+                    <div class="userEmoji"><img src="../assets/images/img_emoji02.png" alt=""></div>
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <!-- 로그인 후 -->
+                    <p>안녕하세요. <span>박서우</span>님<br />오늘도 빡쌤과 함께하세요!</p> 
+                    <ul>
+                        <!-- [전달사항] 업데이트시엔 별도 색상을 부여 .update -->
+                        <li><a href="#">복습/테스트 <span class="update">03</span>개</a></li>
+                        <li><a href="#">플레이리스트 <span>01</span>개</a></li>
+                        <li><a href="#">수업 스케줄</a></li>
+                    </ul>
+                    <button type="button" class="btnMypage">마이페이지</button>
+                </div>
+                <ul class="LeftMenu">
+                    <li><a href="#">빡쌤소개</a></li>
+                    <li><a href="#">프로그램소개</a></li>
+                    <li><a href="#">오늘의 영어</a></li>
+                    <li><a href="#">수강생 후기</a></li>
+                </ul>
+            </div><!-- fixedLeftMenu end -->
+    
+            <!-- [전달사항] 복습/테스트 & 플레이리스트 뷰페이지 구조 다름 -->
+            <div class="fixedPlayList">
+                <a href="#" class="btnPlayLink"><img src="../assets/images/ver2/arrow_playlist.png" alt=""></a>
+                <em class="bar"><span style="width: 33.5%;"></span></em>
+                <div class="playList">
+                    <div class="title">Sample Pattern - 1</div>
+                    <div class="text">I wanna ask you to go busan to see your friend</div>
+                    <div class="controlGroup">
+                        <button type="button" class="prev"><img src="../assets/images/ver2/icon_prev.png" alt=""></button>
+                        <button type="button" class="play"><img src="../assets/images/ver2/icon_play.png" alt=""></button>
+                        <button type="button" class="next"><img src="../assets/images/ver2/icon_next.png" alt=""></button>
+                        <button type="button" class="repetition" disabled><img src="../assets/images/ver2/icon_repetition.png" alt=""></button>
+                        <input type="range" id="volumeControl" value="0">
+                    </div>
+                </div>
+            </div><!-- fixedPlayList end -->
+
+        </header>
+
+        <div class="container">
+            <!-- [전달사항] #contents 구분 .main/.sub -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    <div class="subTitle">
+                        <h4>나의 강의실</h4>
+                        <p>빡쌤과 함께라면 숨어있는 가능성을 발견합니다.</p>
+                        <ul class="menuType02">
+                            <li class="on"><a href="#">복습/테스트</a></li>
+                            <li><a href="#">수강스케줄</a></li>
+                        </ul>
+                    </div>
+                    <div class="boardListPage">
+                        <div class="boardOrder">
+                            <select title="목록순서 선택">
+                                <option value="">최근 등록일 순</option>
+                                <option value="">많이본 순</option>
+                            </select>
+                        </div>
+                        <!-- 20230605 start -->
+                        <div class="boardListBbs">
+                            <div class="boardCheck">
+                                <input type="checkbox" id="boardCheckAll">
+                                <label for="boardCheckAll">전체선택</label>
+                            </div>
+                            <p class="total">전체 <span>192</span>개의 글이 있습니다</p>
+                        </div>
+                        <!-- 20230605 end -->
+                        
+                        <div class="boardList">
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <!-- 20230605 start -->
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck10">
+                                            <label for="boardCheck10">10</label>
+                                        </p>
+                                        <!-- 20230605 end -->
+                                        <p class="num">10</p>
+                                        <p class="title">Stop + ing vs Stop + to 차이 바로 알기 제목이 1줄일 경우 이렇게 표현됩니다.</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck9">
+                                            <label for="boardCheck9">9</label>
+                                        </p>
+                                        <p class="num">9</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트 제목이 2줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + to 테스트 제목이 2줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + to 테스트 제목이 2줄일 경우에는 이렇게 표현됩니다.</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck8">
+                                            <label for="boardCheck8">8</label>
+                                        </p>
+                                        <p class="num">8</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트 제목이 3줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + to 테스트 제목이 3줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + to 테스트 제목이 3줄일 경우에는 이렇게 표현됩니다.Stop + ing vs Stop + to 테스트 제목이 3줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + to 테스트 제목이 3줄일 경우에는 이렇게 표현됩니다. Stop + ing vs Stop + t</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck7">
+                                            <label for="boardCheck7">7</label>
+                                        </p>
+                                        <p class="num">7</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck6">
+                                            <label for="boardCheck6">6</label>
+                                        </p>
+                                        <p class="num">6</p>
+                                        <p class="title">Stop + ing vs Stop + to 차이 바로 알기</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck5">
+                                            <label for="boardCheck5">5</label>
+                                        </p>
+                                        <p class="num">5</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck4">
+                                            <label for="boardCheck4">4</label>
+                                        </p>
+                                        <p class="num">4</p>
+                                        <p class="title">Stop + ing vs Stop + to 차이 바로 알기</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck3">
+                                            <label for="boardCheck3">3</label>
+                                        </p>
+                                        <p class="num">3</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck2">
+                                            <label for="boardCheck2">2</label>
+                                        </p>
+                                        <p class="num">2</p>
+                                        <p class="title">Stop + ing vs Stop + to 차이 바로 알기</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                            <div class="boardItem">
+                                <div class="boardTextBox">
+                                    <a href="#">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="boardCheck1">
+                                            <label for="boardCheck1">1</label>
+                                        </p>
+                                        <p class="num">1</p>
+                                        <p class="title">Stop + ing vs Stop + to 테스트</p>
+                                        <p class="date">2023.02.11</p>
+                                    </a>
+                                </div>
+                                <div class="boardReadingBox">
+                                    <strong>01회</strong>
+                                    <p>열람 횟수</p>
+                                </div>
+                            </div>
+                        </div><!-- boardList end -->
+
+                        <!-- 20230605 start -->
+                        <div class="btnGroup ta_r">
+                            <button type="button" class="btn btnBoardList btnBgWhite">리스트 담기</button>
+                        </div>
+                        <!-- 20230605 end -->
+
+                        <div class="paging">
+                            <a href="#pagePrev" id="pagePrev">이전</a>
+                            <a href="#" title="13페이지">13</a>
+                            <a href="#" title="14페이지">14</a>
+                            <a href="#" title="15페이지">15</a>
+                            <strong>16</strong>
+                            <a href="#" title="17페이지">17</a>
+                            <a href="#" title="18페이지">18</a>
+                            <a href="#pageNext" id="pageNext">다음</a>
+                        </div>
+                        <div class="boardSearch">
+                            <select name="" id="" title="검색 유형 선택">
+                                <option value="">제목</option>
+                            </select>
+                            <input type="text" title="검색어 입력">
+                            <button type="button" class="btnSearch">검색</button>
+                        </div>
+                    </div><!-- boardList end -->
+
+                </div><!-- inner end -->
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <ul class="footerMenu">
+                <li><a href="#" class="fb"><span>개인정보처리방침</span></a></li>
+                <li><a href="#"><span>이용약관</span></a></li>
+                <li><a href="#"><span>법인정보</span></a></li>
+            </ul>
+            <p class="footerAddr">13556 경기도 성남시 분당구 정자일로 213번길 5 분당아이파크 302동 2, 3층</p>
+            <p class="footerCopy">COPYRIGHT © <span>PPAK SSAM.</span> ALL RIGHT RESERVED</p>
+        </footer>
+    </div><!-- wrap end -->
+
+</body>
+</html>

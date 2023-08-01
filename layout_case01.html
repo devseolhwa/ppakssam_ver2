@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    
+    <script src="assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/lib/slick.min.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">본문바로가기</a>
+        <a href="#nav">메뉴바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <div class="topNotice">
+                    <h5><img src="assets/images/ver2/icon_notice.svg" alt=""><p>공지사항</p></h5>
+                    <div class="noticeSlider">
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                        <div class="noticeItem">
+                            <a href="#">
+                                <p class="title">이곳은 공지사항 게시글 제목이 노출되는 영역입니다.</p>
+                                <p class="date">2023.06.27</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerMenu">
+                    <h1 class="logo"><a href="/" title="메인페이지로"><img src="assets/images/ver2/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
+                
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">수강문의</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </nav><!-- nav end -->
+                     
+                    <div class="gnbWrap">
+                        <div class="snsGroup">
+                            <a href="#"><img src="assets/images/ver2/icon_naverblog.svg" alt="네이버블로그"></a>
+                            <a href="#"><img src="assets/images/ver2/icon_youtube.svg" alt="유튜브"></a>
+                            <a href="#"><img src="assets/images/ver2/icon_instagram.svg" alt="인스타그램"></a>
+                        </div><!-- snsGroup end -->
+                        <a href="#gnb" id="btnGnbOpen"><span>메뉴열기</span></a>
+                        <div id="gnb">
+                            <div class="gnbInner">
+                                <div class="userInfo">
+                                    <div class="userEmoji"><img src="assets/images/img_emoji00.png" alt=""></div>
+                                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                                    <!-- 로그인 전 -->
+                                    <p>안녕하세요. 반갑습니다.<br />로그인 후 빡쌤과 함께하세요!</p>
+                                    <button type="button" class="btnLogin">로그인</button>
+                                </div>
+                                <ul>
+                                    <li><a href="#;">빡쌤소개</a>
+                                        <ul>
+                                            <li><a href="#">빡쌤 프로필</a></li>
+                                            <li><a href="#">빡쌤 인스타그램</a></li>
+                                            <li><a href="#">빡쌤 유튜브</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">프로그램소개</a></li>
+                                    <li><a href="#">오늘의 영어</a></li>
+                                    <li><a href="#">수강생 후기</a></li>
+                                </ul>
+                                <!-- 
+                                    <div class="gnbBottom">
+                                        <a href="#">나의 강의실</a>
+                                        <a href="#">고객센터</a>
+                                        <a href="#">기업수강문의</a>
+                                    </div> 
+                                -->
+                                <button type="button" id="btnGnbclose">메뉴닫기</button>
+                            </div><!-- gnbInner end -->
+                        </div><!-- gnb end -->
+                    </div><!-- gnbWrap end -->
+                </div><!-- headerMenu end -->
+            </div><!-- inner end -->
+
+            <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+            <div class="fixedLoginUI">
+                <button type="button">회원가입</button>
+                <button type="button">나의 강의실</button>
+                <button type="button" class="btnLoginUIClose"><img src="assets/images/ver2/icon_fixedLoginUI_close.svg" alt=""></button>
+            </div>
+
+            <div class="fixedLeftMenu">
+                <div class="userInfo">
+                    <div class="userEmoji"><img src="assets/images/img_emoji00.png" alt=""></div>
+                    <!-- [전달사항] 로그인/로그아웃 상태에 따라 다름 -->
+                    <!-- 로그인 전 -->
+                    <p>안녕하세요. 반갑습니다.<br />로그인 후 빡쌤과 함께하세요!</p>
+                    <button type="button" class="btnLogin">로그인</button>
+                </div>
+                <ul class="LeftMenu">
+                    <li><a href="#">빡쌤소개</a></li>
+                    <li><a href="#">프로그램소개</a></li>
+                    <li><a href="#">오늘의 영어</a></li>
+                    <li><a href="#">수강생 후기</a></li>
+                </ul>
+            </div><!-- fixedLeftMenu end -->
+    
+            <!-- [전달사항] 복습/테스트 & 플레이리스트 뷰페이지 구조 다름 -->
+            <div class="fixedPlayList">
+                <a href="#" class="btnPlayLink"><img src="assets/images/ver2/arrow_playlist.png" alt=""></a>
+                <em class="bar"><span style="width: 33.5%;"></span></em>
+                <div class="playList">
+                    <div class="title">Sample Pattern - 1</div>
+                    <div class="text">I wanna ask you to go busan to see your friend</div>
+                    <div class="controlGroup">
+                        <button type="button" class="prev"><img src="assets/images/ver2/icon_prev.png" alt=""></button>
+                        <button type="button" class="play"><img src="assets/images/ver2/icon_play.png" alt=""></button>
+                        <button type="button" class="next"><img src="assets/images/ver2/icon_next.png" alt=""></button>
+                        <button type="button" class="repetition" disabled><img src="assets/images/ver2/icon_repetition.png" alt=""></button>
+                        <input type="range" id="volumeControl" value="0">
+                    </div>
+                </div>
+            </div><!-- fixedPlayList end -->
+
+        </header>
+
+        <div class="container">
+            <!-- [전달사항] #contents 구분 .main/.sub -->
+            <div id="contents" class="main">
+
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <ul class="footerMenu">
+                <li><a href="#" class="fb"><span>개인정보처리방침</span></a></li>
+                <li><a href="#"><span>이용약관</span></a></li>
+                <li><a href="#"><span>법인정보</span></a></li>
+            </ul>
+            <p class="footerAddr">13556 경기도 성남시 분당구 정자일로 213번길 5 분당아이파크 302동 2, 3층</p>
+            <p class="footerCopy">COPYRIGHT © <span>PPAK SSAM.</span> ALL RIGHT RESERVED</p>
+        </footer>
+
+    </div><!-- wrap end -->
+
+</body>
+</html>
