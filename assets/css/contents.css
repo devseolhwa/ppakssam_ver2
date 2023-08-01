@@ -418,7 +418,7 @@ body:after, .wrap:before, .wrap:after {background-color: #1A9A1A;}
 .studyTotal .title h5 .playTime em{color: #1A9A1A;}
 .studyTotal .percentageValue{font-size: 13px;color: #1A9A1A;font-weight: 600;line-height: 26px;letter-spacing: -0.8px;}
 .studyTotal .percentageValue em{font-size: 15px;}
-.studyTotal .percentageBar{position: relative;display: block;width: 100%;height: 3px;margin-bottom: 14px;background: #E6E6E6;}
+.studyTotal .percentageBar{position: relative;display: block;width: 100%;height: 4px;margin-bottom: 14px;background: #E6E6E6;}
 .studyTotal .percentageBar span{position: absolute;top: 0;height: 4px;background: #1A9A1A;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
 .studyWrap .studyBox{display: flex;padding: 10px 0;background: #FFF;border: 1px solid #DADADA;border-radius: 10px;box-sizing: border-box;box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.05);align-items: center;justify-content: space-between;}
 .studyWrap .studyBox li{flex: 1;text-align: center;box-sizing: border-box;}
