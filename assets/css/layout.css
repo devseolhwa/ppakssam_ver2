@@ -284,7 +284,7 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
     .playList .controlGroup .next img{width: 10px;height: 10px;}
     .playList .controlGroup .repetition img{width: 16px;height: 16px;}
     .PlayViewPage{padding-bottom: 80px;}
-    .PlayViewPage #gnb .gnbInner .gnbGroup{height: calc(100% - 100px);}
+    .PlayViewPage #gnb .gnbInner .gnbGroup{height: calc(100% - 80px);}
     .PlayViewPage .fixedPlayList{height: 80px;}
     .PlayViewPage .fixedPlayList .playList .controlGroup{height: auto;}
     
