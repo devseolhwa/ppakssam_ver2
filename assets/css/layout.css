@@ -133,7 +133,7 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
 .noticeSlider .title:before{content: "· ";}
 .gnbWrap{display: flex;align-items: center;}
 .snsGroup{display: flex;align-items: center;}
-.snsGroup a{display: block;}
+.snsGroup a{display: block;width: 40px;height: 40px;}
 .snsGroup a + a{margin-left: 10px;}
 .fixedLoginUI{position: fixed;right: 20px;bottom: 120px;display: flex;align-items: center;padding: 7px 10px 8px;background: rgba(255, 255, 255, 0.90);border-radius: 60px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);box-sizing: border-box;backdrop-filter: blur(2px);font-size: 0;z-index: 100;}
 .fixedLoginUI button{padding: 9px 21px 8px;border-radius: 50px;box-sizing: border-box;font-size: 14px;font-weight: 600;letter-spacing: -0.6px;}

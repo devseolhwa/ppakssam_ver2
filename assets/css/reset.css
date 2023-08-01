@@ -24,7 +24,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
 input[type="checkbox"], input[type="radio"] {padding: 0;border: 0;border-radius: 0;box-sizing: border-box;}
 input[type="image"] {border: 0 none;}
 input[type="text"], img, select {vertical-align: middle;}
-select{height: 44px;padding: 0 25px 0 15px;background-color: #fff;background-image: url(../images/ver2/icon_select.svg);background-position: right 15px center;background-repeat: no-repeat;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #333;}
+select{height: 44px;padding: 0 25px 0 15px;background-color: #fff;background-image: url(../images/ver2/icon_select.png);background-size: 14px;background-position: right 15px center;background-repeat: no-repeat;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #333;}
 select::-ms-expand {display: none;}
 textarea{padding: 15px;box-sizing: border-box;font-size: 14px;color: #333;}
 button, input[type="button"], input[type="reset"], input[type="submit"] {overflow: visible;-webkit-appearance: button;cursor: pointer;}
