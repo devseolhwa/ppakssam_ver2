@@ -71,23 +71,24 @@ header .logo a{display: block;}
 .userInfo .btnLogin{background: #F5A419;border: 1px solid #F5A419;}
 .userInfo .btnLogout{background: #242424;border: 1px solid #242424;}
 .userInfo .btnMypage{background: #fff;border: 1px solid #242424;color: #242424;}
-#gnb .gnbInner > ul{height: calc(100% - 445px);overflow-y: auto;border-top: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;}
-#gnb .gnbInner > ul > li > a{position: relative;display: block;width: 100%;height: 60px;line-height: 60px;padding: 0 32px 0 20px;border-bottom: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;font-size: 16px;color: #222;font-weight: 600;letter-spacing: -0.8px;transition: .3s;-webkit-transition: .3s;}
-#gnb .gnbInner > ul > li > a:before, #gnb .gnbInner > ul > li > a:after{transition-duration: 0.3s;-webkit-transition-duration: 0.3s;}
-#gnb .gnbInner > ul > li > a:before{content: "";display: block;position: absolute;top: 50%;right: 22px;width: 9px;height: 1px;margin-top: -5px;background-color: #222;transform: rotate(225deg);-webkit-transform: rotate(225deg);}
-#gnb .gnbInner > ul > li > a:after{content: "";display: block;position: absolute;top: 50%;right: 26px;width: 1px;height: 9px;margin-top: -3px;background-color: #222;box-sizing: border-box;transform: rotate(225deg);-webkit-transform: rotate(225deg);}
-#gnb .gnbInner > ul > li.on > a{color: #F5A419;}
-#gnb .gnbInner > ul > li.on > a:before, #gnb .gnbInner > ul > li.on > a:after{background-color: #F5A419;}
-#gnb .gnbInner > ul > li.ulHas > a:before{margin-top: 0;right: 26px;}
-#gnb .gnbInner > ul > li.ulHas > a:after{margin-top: -4px;right: 24px;}
-#gnb .gnbInner > ul > li.ulHas.on > a:before{transform: rotate(315deg);-webkit-transform: rotate(315deg);}
-#gnb .gnbInner > ul > li.ulHas.on > a:after{transform: rotate(135deg);-webkit-transform: rotate(135deg);}
-#gnb .gnbInner > ul > li > ul{display: none;padding: 20px 20px;border-bottom: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;}
-#gnb .gnbInner > ul > li > ul > li + li{margin-top: 10px;}
-#gnb .gnbInner > ul > li > ul > li > a{position: relative;padding-left: 10px;font-weight: 400;font-size: 15px;letter-spacing: -0.8px;color: #666;transition: .3s;-webkit-transition: .3s;}
-#gnb .gnbInner > ul > li > ul > li > a:hover, #gnb .gnbInner > ul > li > ul > li > a:focus{color: #F5A419;}
-#gnb .gnbInner > ul > li > ul > li > a:before{content: "";position: absolute;left: 0;top: 8px;display: block;width: 2px;height: 2px;background-color: #666;vertical-align: middle;}
-#gnb .gnbInner > ul > li > ul > li > a:hover:before, #gnb .gnbInner > ul > li > ul > li > a:focus:before{background-color: #F5A419;}   
+#gnb .gnbInner .gnbGroup{height: calc(100% - 100px);overflow-y: auto;}
+#gnb .gnbInner .gnbGroup > ul{border-top: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;}
+#gnb .gnbInner .gnbGroup > ul > li > a{position: relative;display: block;width: 100%;height: 60px;line-height: 60px;padding: 0 32px 0 20px;border-bottom: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;font-size: 16px;color: #222;font-weight: 600;letter-spacing: -0.8px;transition: .3s;-webkit-transition: .3s;}
+#gnb .gnbInner .gnbGroup > ul > li > a:before, #gnb .gnbInner .gnbGroup > ul > li > a:after{transition-duration: 0.3s;-webkit-transition-duration: 0.3s;}
+#gnb .gnbInner .gnbGroup > ul > li > a:before{content: "";display: block;position: absolute;top: 50%;right: 22px;width: 9px;height: 1px;margin-top: -5px;background-color: #222;transform: rotate(225deg);-webkit-transform: rotate(225deg);}
+#gnb .gnbInner .gnbGroup > ul > li > a:after{content: "";display: block;position: absolute;top: 50%;right: 26px;width: 1px;height: 9px;margin-top: -3px;background-color: #222;box-sizing: border-box;transform: rotate(225deg);-webkit-transform: rotate(225deg);}
+#gnb .gnbInner .gnbGroup > ul > li.on > a{color: #F5A419;}
+#gnb .gnbInner .gnbGroup > ul > li.on > a:before, #gnb .gnbInner .gnbGroup > ul > li.on > a:after{background-color: #F5A419;}
+#gnb .gnbInner .gnbGroup > ul > li.ulHas > a:before{margin-top: 0;right: 26px;}
+#gnb .gnbInner .gnbGroup > ul > li.ulHas > a:after{margin-top: -4px;right: 24px;}
+#gnb .gnbInner .gnbGroup > ul > li.ulHas.on > a:before{transform: rotate(315deg);-webkit-transform: rotate(315deg);}
+#gnb .gnbInner .gnbGroup > ul > li.ulHas.on > a:after{transform: rotate(135deg);-webkit-transform: rotate(135deg);}
+#gnb .gnbInner .gnbGroup > ul > li > ul{display: none;padding: 20px 20px;border-bottom: 1px solid rgba(0, 0, 0, 0.1);box-sizing: border-box;}
+#gnb .gnbInner .gnbGroup > ul > li > ul > li + li{margin-top: 10px;}
+#gnb .gnbInner .gnbGroup > ul > li > ul > li > a{position: relative;padding-left: 10px;font-weight: 400;font-size: 15px;letter-spacing: -0.8px;color: #666;transition: .3s;-webkit-transition: .3s;}
+#gnb .gnbInner .gnbGroup > ul > li > ul > li > a:hover, #gnb .gnbInner .gnbGroup > ul > li > ul > li > a:focus{color: #F5A419;}
+#gnb .gnbInner .gnbGroup > ul > li > ul > li > a:before{content: "";position: absolute;left: 0;top: 8px;display: block;width: 2px;height: 2px;background-color: #666;vertical-align: middle;}
+#gnb .gnbInner .gnbGroup > ul > li > ul > li > a:hover:before, #gnb .gnbInner .gnbGroup > ul > li > ul > li > a:focus:before{background-color: #F5A419;}   
 .gnbBottom{position: absolute;bottom: 0;left: 0;right: 0;background: #F1F1F1;border-top: 1px solid #DFDFDF;box-sizing: border-box;display: flex;align-items: center;justify-content: space-around;height: 50px;}
 .gnbBottom a{position: relative;font-weight: 600;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.6px;color: #555555;}
 .gnbBottom a + a:before{content: "";position: absolute;left: -24px;top: 6px;display: block;width: 1px;height: 8px;background-color: #B8B8B8;vertical-align: middle;}
@@ -163,7 +164,6 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
 .fixedLeftMenu .LeftMenu > li > ul > li > a:hover{color: #F5A419;}
 .fixedLeftMenu .LeftMenu > li > ul > li > a:before{content: "";position: absolute;left: 0;top: 8px;display: block;width: 2px;height: 2px;background-color: #666;vertical-align: middle;}
 .fixedLeftMenu .LeftMenu > li > ul > li > a:hover:before{background-color: #F5A419;}
-
 .fixedPlayList{position: fixed;left: 0;right: 0;bottom: 0;width: 100%;height: 100px;background: #222;box-sizing: border-box;z-index: 1000;}
 .fixedPlayList .btnPlayLink{position: absolute;top: -25px;left: 50%;display: block;width: 50px;height: 25px;margin-left: -25px;box-sizing: border-box;}
 .fixedPlayList .bar{position: relative;display: block;width: 100%;height: 3px;background: #484848;}
@@ -200,7 +200,6 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
 }
 @media screen and (max-width: 1280px){
     .wrap{padding-bottom: 145px;}
-    .wrap.PlayViewPage{padding-bottom: 100px;}
     .wrap.login{padding-bottom: 0;}
     .headerMenu{padding: 30px 0;}
     header .logo{width: 180px;}
@@ -208,6 +207,7 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
     .nav > ul > li + li:before{left: -20px;}
     .nav > ul > li > a{font-size: 16px;}
     .snsGroup a{width: 36px;height: 36px;}
+    #gnb .gnbInner .gnbGroup{height: calc(100% - 145px);}
     .fixedLoginUI{bottom: 165px;}
     .fixedPlayList{height: 145px;}
     .playList{flex-direction: row;flex-wrap: wrap;align-content: space-between;padding: 20px 20px 18px;}
@@ -220,6 +220,8 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
     .playList .controlGroup .next img{width: 12px;height: 12px;}
     .playList .controlGroup .repetition img{width: 16px;height: 16px;}
     .playList #volumeControl[type="range"]{display: none;}
+    .PlayViewPage{padding-bottom: 100px;}
+    .PlayViewPage #gnb .gnbInner .gnbGroup{height: calc(100% - 100px);}
     .PlayViewPage .fixedPlayList{height: 100px;}
     .PlayViewPage .fixedPlayList .playList .controlGroup{justify-content: center;width: 100%;height: 57px;}
 }
@@ -249,7 +251,6 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
 	.mobileShowInline {display: inline-block !important;}
     .mobileHide{display: none !important;}
 
-    .wrap.PlayViewPage{padding-bottom: 80px;}
     #contents{min-height: auto;}
 
     header{padding: 0 20px;}
@@ -282,6 +283,8 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
     .playList .controlGroup .play img{width: 9px;height: 10px;}
     .playList .controlGroup .next img{width: 10px;height: 10px;}
     .playList .controlGroup .repetition img{width: 16px;height: 16px;}
+    .PlayViewPage{padding-bottom: 80px;}
+    .PlayViewPage #gnb .gnbInner .gnbGroup{height: calc(100% - 100px);}
     .PlayViewPage .fixedPlayList{height: 80px;}
     .PlayViewPage .fixedPlayList .playList .controlGroup{height: auto;}
     

@@ -13,10 +13,10 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
      $("#gnb").removeClass("active");
      $("body").removeClass("opened");
      return false;
- }).on("click", ".gnbInner > ul > li > a", function () {
+ }).on("click", ".gnbGroup > ul > li > a", function () {
      $(this).parent("li").toggleClass("on").siblings("li").removeClass("on");
      if ( $(this).parent('li').hasClass('ulHas') ) {
-         $(".gnbInner > ul > li").each(function () {
+         $(".gnbGroup > ul > li").each(function () {
              let onCheck = $(this).is(".on");
              if (onCheck) {
                  $(this).children("ul").slideDown();
@@ -28,7 +28,7 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
      }
  });
  $(document).ready(function() {
-     $(".gnbInner ul ul").each(function () {
+     $(".gnbGroup ul ul").each(function () {
          $(this).parent("li").addClass("ulHas");
      });
  });
