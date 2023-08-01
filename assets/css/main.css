@@ -241,6 +241,12 @@
 @media screen and (max-width: 375px){
     .bannerSlide .bannerItem.purple{background-position: center bottom;}
 }
+@media screen and (max-width: 320px){
+    .visual{padding: 0 10px;}
+    .todayEnglish{padding: 30px 0 30px 10px;}
+    .bannerSlide{padding: 0 10px 0 0;}
+    .reviewSlide .reviewItem{width: 300px;}
+}
 
 @-webkit-keyframes prevArrow {
     0% {opacity: 1;-webkit-transform: translateX(0px) scale(1);transform: translateX(0px) scale(1);}

@@ -773,6 +773,10 @@ body:after, .wrap:before, .wrap:after {background-color: #1A9A1A;}
     .sentence > ul > li{font-size: 16px;}
 }
 
+@media screen and (max-width: 320px){
+    #contents.sub .inner{width: calc(100% - 20px);}
+}
+
 @-webkit-keyframes handsAni {
     0%, 100% {
         -webkit-transform: translate(-5%, 0) rotate(-5deg);

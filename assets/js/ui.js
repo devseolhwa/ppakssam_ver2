@@ -7,9 +7,11 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
      return false;
  }).on("click", "#btnGnbOpen", function () {
      $("#gnb").fadeIn("400").addClass("active");
+     $("body").addClass("opened");
      return false;
  }).on("click", "#btnGnbclose", function () {
      $("#gnb").removeClass("active");
+     $("body").removeClass("opened");
      return false;
  }).on("click", ".gnbInner > ul > li > a", function () {
      $(this).parent("li").toggleClass("on").siblings("li").removeClass("on");
