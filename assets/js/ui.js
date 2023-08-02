@@ -15,7 +15,7 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
      return false;
  }).on("click", ".gnbGroup > ul > li > a", function () {
      $(this).parent("li").toggleClass("on").siblings("li").removeClass("on");
-     if ( $(this).parent('li').hasClass('ulHas') ) {
+     if ( $(this).parent("li").hasClass("ulHas") ) {
          $(".gnbGroup > ul > li").each(function () {
              let onCheck = $(this).is(".on");
              if (onCheck) {
@@ -100,7 +100,7 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
     /* 
     $(".LeftMenu > li > a").on("click", function () {
         $(this).parent("li").toggleClass("on").siblings("li").removeClass("on");
-        if ( $(this).parent('li').hasClass('ulHas') ) {
+        if ($(this).parent("li").hasClass("ulHas")) {
             $(".LeftMenu > li").each(function () {
                 let onCheck = $(this).is(".on");
                 if (onCheck) {
@@ -114,7 +114,7 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
     });
     $(".LeftMenu ul").each(function () {
         $(this).parent("li").addClass("ulHas");
-    }); 
+    });
     */
 
     function noticeSlider() {
